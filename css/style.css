@@ -138,6 +138,34 @@
             gap: 20px;
         }
 
+        .skill-item {
+            list-style: none;
+            margin-bottom: 14px;
+        }
+
+        .skill-label {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 5px;
+            color: #273746;
+            font-weight: bold;
+        }
+
+        .skill-bar {
+            height: 9px;
+            overflow: hidden;
+            border-radius: 5px;
+            background: #d6eaf8;
+        }
+
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            border-radius: inherit;
+            background: #1f618d;
+        }
+
         article {
             border-left: 4px solid #1f618d;
             padding-left: 15px;
