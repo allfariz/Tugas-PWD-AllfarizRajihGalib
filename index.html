@@ -236,6 +236,41 @@
                 <li>Fotografi - Dokumentasi acara akhirusannah dan futsal cup.</li>
                 <li>UI/UX Design - Desain aplikasi Caremateku untuk lomba.</li>
             </ol>
+
+            <div class="project-form-wrapper">
+                <h3>Tertarik dengan project saya?</h3>
+                <form class="project-form" action="#kontak" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-pilihan">Project yang diminati</label>
+                        <select id="project-pilihan" name="project-pilihan" required>
+                            <option value="" selected disabled>Pilih project</option>
+                            <option value="portfolio">Website Portfolio Pribadi</option>
+                            <option value="sistem-informasi">Sistem Informasi</option>
+                            <option value="ui-ux">UI/UX Design</option>
+                            <option value="multimedia">Editing Video atau Fotografi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan atau kebutuhan project..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">Kirim Pesan</button>
+                </form>
+            </div>
         </section>
 
         <!-- Kontak -->
