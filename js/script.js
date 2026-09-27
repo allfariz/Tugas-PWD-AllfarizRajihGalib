@@ -1,10 +1,3 @@
-// ==========================================
-// JAVASCRIPT - WEBSITE CV ALLFARIZ RAJIH GALIB
-// ==========================================
-
-
-// 1. SMOOTH SCROLLING
-// Membuat perpindahan antar-section menjadi lebih halus
 const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
 navLinks.forEach(function (link) {
@@ -24,8 +17,7 @@ navLinks.forEach(function (link) {
 });
 
 
-// 2. TOMBOL KEMBALI KE ATAS
-// Tombol akan muncul setelah halaman di-scroll ke bawah
+
 const backToTop = document.getElementById("backToTop");
 
 window.addEventListener("scroll", function () {
@@ -37,7 +29,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-// Ketika tombol diklik, halaman kembali ke bagian paling atas
+
 backToTop.addEventListener("click", function () {
     window.scrollTo({
         top: 0,
@@ -46,8 +38,7 @@ backToTop.addEventListener("click", function () {
 });
 
 
-// 3. NAVIGASI AKTIF
-// Memberikan tanda pada menu sesuai section yang sedang dibaca
+
 const sections = document.querySelectorAll("main section[id]");
 const menuLinks = document.querySelectorAll("#mainNav a");
 
@@ -80,8 +71,7 @@ sections.forEach(function (section) {
 });
 
 
-// 4. TAHUN COPYRIGHT OTOMATIS
-// Tahun footer mengikuti tahun pada komputer pengunjung
+
 const currentYear = document.getElementById("currentYear");
 
 if (currentYear) {
@@ -89,6 +79,5 @@ if (currentYear) {
 }
 
 
-// 5. PESAN DI CONSOLE
-// Untuk memastikan JavaScript berhasil dijalankan
+
 console.log("Website CV Allfariz Rajih Galib berhasil dimuat.");
