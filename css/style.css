@@ -237,6 +237,48 @@
             background: #154360;
         }
 
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 16px;
+            padding: 11px 20px;
+            border-radius: 8px;
+            background: #1f618d;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(31, 97, 141, 0.2);
+            transition: transform 0.25s ease, background-color 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .contact-button:hover {
+            background: #154360;
+            box-shadow: 0 8px 18px rgba(31, 97, 141, 0.3);
+            transform: translateY(-4px) scale(1.03);
+        }
+
+        .contact-button span {
+            transition: transform 0.25s ease;
+        }
+
+        .contact-button:hover span {
+            transform: translateX(4px);
+        }
+
+        .contact-button:focus-visible {
+            outline: 3px solid #85c1e9;
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .contact-button,
+            .contact-button span {
+                transition: none;
+            }
+        }
+
         article {
             border-left: 4px solid #1f618d;
             padding-left: 15px;
